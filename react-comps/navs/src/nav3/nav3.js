@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
 import logo from '../images/logo.jpg';
+import { FiBell, FiSettings, FiUser } from "react-icons/fi";
 
 class nav3 extends Component {
     render() {
         return (
-            <Navbar className="nav-3" variant='dark' expand="lg">
+            <Navbar className="nav-3" bg="primary" variant='dark' expand="lg">
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
@@ -28,6 +29,11 @@ class nav3 extends Component {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
+                    </Nav>
+                    <Nav >
+                        <Nav.Link href="#link1"><FiBell /></Nav.Link>
+                        <Nav.Link href="#link2"><FiSettings /></Nav.Link>
+                        <Nav.Link href="#link3"><FiUser /></Nav.Link>
                     </Nav>
 
 
