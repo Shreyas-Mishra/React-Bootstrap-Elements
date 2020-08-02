@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
-import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import logo from '../images/logo.jpg';
 
-class nav1 extends Component {
+class nav2 extends Component {
     render() {
         return (
             <Navbar bg="dark" variant='dark' expand="lg">
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">
+                    <img
+                        alt=""
+                        src={logo}
+                        width="30"
+                        height="30"
+                        className="d-inline-block align-top"
+                    />{' '}
+                 React Bootstrap
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
@@ -19,14 +29,16 @@ class nav1 extends Component {
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
-                    </Form>
+                    <Nav>
+                        <Nav.Link href="#link1">Left</Nav.Link>
+                        <Nav.Link href="#link2">Options</Nav.Link>
+                    </Nav>
+
+
                 </Navbar.Collapse>
             </Navbar>
         );
     }
 }
 
-export default nav1;
+export default nav2;
