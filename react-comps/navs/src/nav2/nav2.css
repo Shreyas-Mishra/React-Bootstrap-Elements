@@ -16,3 +16,18 @@
     display: none !important;
     vertical-align: 0;
 }
+
+.Nav-2 .navbar {
+    background-color: black;
+    vertical-align: auto;
+}
+
+.Nav-2 .navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.Nav-2 .navbar-light .navbar-toggler {
+    border-color: white;
+    background-color: white;
+    opacity: 0.8;
+}

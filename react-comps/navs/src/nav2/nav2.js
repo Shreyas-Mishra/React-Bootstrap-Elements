@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavDropdown, Nav, ButtonGroup } from 'react-bootstrap';
-import logo from '../images/logo.jpg';
+import logo from '../images/logo-dark.jpg';
 import { FiBell, FiSettings, FiUser, FiLogOut } from "react-icons/fi";
 import { NavLink } from 'react-router-dom';
 import './nav2.css';
@@ -9,17 +9,16 @@ class nav2 extends Component {
     render() {
         return (
             <div className="Nav-2">
-                <Navbar bg="dark" variant='dark' expand="lg">
+                <Navbar expand="lg">
                     <Navbar.Brand href="#home">
                         <img
                             alt=""
                             src={logo}
-                            width="30"
-                            height="30"
+                            width="200"
+                            height="40"
                             className="d-inline-block align-top"
                         />{' '}
-                 React Bootstrap
-                </Navbar.Brand>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
