@@ -21,7 +21,7 @@ class nav2 extends Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/page2">Nav-2</Nav.Link>
+                        <Nav.Link href="/page2">Nav-3</Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/">Action</NavDropdown.Item>
                             <NavDropdown.Item href="/page3">Nav-2</NavDropdown.Item>
