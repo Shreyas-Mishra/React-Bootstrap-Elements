@@ -3,6 +3,7 @@ import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-boots
 // import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import Nav2 from '../nav2/nav2';
 import { Link } from "react-router-dom";
+import './nav1.css';
 
 class nav1 extends Component {
 
@@ -16,7 +17,7 @@ class nav1 extends Component {
         };
         return (
             <div className="Nav-1">
-                <Navbar bg="dark" variant='dark' expand="lg">
+                <Navbar bg="dark" variant='dark' >
                     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

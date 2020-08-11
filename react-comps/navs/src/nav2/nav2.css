@@ -1,0 +1,18 @@
+.Nav-2 .profilePic {
+    width: 70%;
+}
+
+.Nav-2 .dropdown-menu {
+    min-width: 15rem;
+}
+
+.Nav-2 .Dropleft .dropdown-menu {
+    margin-top: 60% !important;
+}
+
+/* Remove the left arrow on dropdown */
+
+.Nav-2 .dropleft .dropdown-toggle::before {
+    display: none !important;
+    vertical-align: 0;
+}

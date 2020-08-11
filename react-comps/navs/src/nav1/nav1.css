@@ -1,0 +1,10 @@
+.Nav-1 .dropdown {
+    position: static !important;
+    display: block;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s !important;
+}
+
+.Nav-1 .dropdown-menu {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    width: 100% !important;
+}
