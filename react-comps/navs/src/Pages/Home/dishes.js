@@ -2,7 +2,7 @@ export const DISHES =
     [
         {
             id: 0,
-            name: 'Nano',
+            name: 'i10',
             image: 'assets/images/logo-dark.jpg',
             category: 'small , XUV',
             label: 'Hot',
