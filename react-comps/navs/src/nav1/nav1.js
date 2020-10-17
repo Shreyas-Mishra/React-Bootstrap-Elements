@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
-import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
 // import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import Nav2 from '../nav2/nav2';
-import { Link } from "react-router-dom";
+// import Nav2 from '../nav2/nav2';
 import './nav1.css';
+import logo from '../images/logo-dark.jpg';
+import { FiShoppingCart } from "react-icons/fi";
+
 
 class nav1 extends Component {
 
     render() {
 
-        const mystyle = {
-            color: "white",
-            backgroundColor: "DodgerBlue",
-            padding: "10px",
-            fontFamily: "Arial"
-        };
         return (
             <div className="Nav-1">
                 <Navbar bg="dark" variant='dark' >
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="/">
+                        <img
+                            alt=""
+                            src={logo}
+                            width="200"
+                            height="40"
+                            className="d-inline-block align-top"
+                        />{' '}
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
@@ -33,10 +37,8 @@ class nav1 extends Component {
                                 <NavDropdown.Item >Separated link</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
-                        <Form inline>
-                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
+
+                        <Nav.Link href="#link2"><FiShoppingCart /></Nav.Link>
                     </Navbar.Collapse>
                 </Navbar>
             </div>
