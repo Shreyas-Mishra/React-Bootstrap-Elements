@@ -19,11 +19,18 @@ class Home extends Component {
     render() {
         const { dishes, searchField } = this.state
         const filteredCountries = dishes.filter(dishes => (
-            dishes.name.toLowerCase().includes(searchField.toLowerCase())
-            ||
-            dishes.category.toLowerCase().includes(searchField.toLowerCase())
+            dishes.name.toLowerCase().includes(searchField.toLowerCase()) || dishes.category.toLowerCase().includes(searchField.toLowerCase())
 
         ))
+        if (filteredCountries.length === 0)
+            return (
+                <div>
+                    <Nav >
+                    </Nav>
+                    <SearchBox placeholder="Search" handleChange={this.handleChange} />
+                    <p>No data found!</p>
+                </div>
+            )
         const menu = filteredCountries.map((dish) => {
             return (
                 <div key={dish.id} className="col-12 col-md-5 m-1">
@@ -37,6 +44,8 @@ class Home extends Component {
                         </div>
                     </Card>
                 </div>
+
+
             );
         });
 
