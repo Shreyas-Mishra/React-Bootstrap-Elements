@@ -3,7 +3,7 @@ import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
 // import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 // import Nav2 from '../nav2/nav2';
 import './nav1.css';
-import logo from '../images/logo-dark.jpg';
+import logo from '../images/logo-white.jpg';
 import { FiShoppingCart } from "react-icons/fi";
 
 
@@ -13,7 +13,7 @@ class nav1 extends Component {
 
         return (
             <div className="Nav-1">
-                <Navbar bg="dark" variant='dark' >
+                <Navbar variant='dark' >
                     <Navbar.Brand href="/">
                         <img
                             alt=""

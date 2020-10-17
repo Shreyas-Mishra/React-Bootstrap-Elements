@@ -1,3 +1,6 @@
+.navbar{
+    background: #fff222;
+}
 .Nav-1 .dropdown {
     position: static !important;
     display: block;
@@ -10,5 +13,5 @@
 }
 
 .Nav-1  .nav-link {
-    color: white !important;
+    color: black !important;
 }
