@@ -22,16 +22,9 @@ class Home extends Component {
             dishes.name.toLowerCase().includes(searchField.toLowerCase()) || dishes.category.toLowerCase().includes(searchField.toLowerCase())
 
         ))
-        if (filteredCountries.length === 0)
-            return (
-                <div>
-                    <Nav >
-                    </Nav>
-                    <SearchBox placeholder="Search" handleChange={this.handleChange} />
-                    <p>No data found!</p>
-                </div>
-            )
+
         const menu = filteredCountries.map((dish) => {
+
             return (
                 <div key={dish.id} className="col-12 col-md-5 m-1">
                     <Card>
@@ -40,25 +33,30 @@ class Home extends Component {
                             <h3>Name : {dish.name}</h3>
                             <h4>Style : {dish.category}</h4>
                             <h4>Price : {dish.price}</h4>
-
                         </div>
                     </Card>
                 </div>
-
-
             );
         });
-
-
-        return (
-            <div>
-                <Nav >
-                </Nav>
-                <SearchBox placeholder="Search" handleChange={this.handleChange} />
-
-                {menu}
-            </div>
-        );
+        if (filteredCountries.length === 0) {
+            return (
+                <div>
+                    <Nav >
+                    </Nav>
+                    <SearchBox placeholder="Search" handleChange={this.handleChange} />
+                    <p>No Data Found!</p>
+                </div>
+            )
+        }
+        else
+            return (
+                <div>
+                    <Nav >
+                    </Nav>
+                    <SearchBox placeholder="Search" handleChange={this.handleChange} />
+                    {menu}
+                </div>
+            )
     }
 }
 
